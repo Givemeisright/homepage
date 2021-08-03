@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="xuguangliang" />
+<meta name="revised" content="xuguangliang,6/14/18" />
+<meta name="generator" content="Dreamweaver CC 2017" />
+<meta name="description" content="personal website" />
+<meta name="keywords" content="Xuguang Liang,xliang13,ass3,form,issues,JavaScript,king music store" />
+<title>XuGuangLiang Homepage</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<link rel="stylesheet" href="css/styles_print.css" media="print" />
+<script type="text/javascript">
+	function load()
+	{
+		alert("Welcome to the Kings Music Store - Newsletter Signup");
+	}
+	function CheckPost ()
+   {
+      if (nameandmail.firstname.value == "")
+      {
+          alert("please enter your firstname");
+          nameandmail.firstname.focus();
+          return false;
+      }
+      if (nameandmail.lastname.value == "")
+      {
+          alert("please enter your lastname");
+          nameandmail.lastname.focus();
+          return false;
+      }
+	  if (nameandmail.email.value == "")
+      {
+          alert("please enter your e-mail");
+          nameandmail.email.focus();
+          return false;
+      }
+
+     if (nameandmail.texts.value.length > 60)
+     {
+          alert("Text field maximum size is 60！");
+          addForm.texts.focus();
+          return false;
+     }
+	 if (nameandmail.texts.value.length == 0)
+	 {
+		 alert("please write something");
+         nameandmail.texts.focus();
+         return false;
+	 }
+     return true;
+   }
+</script>
+</head>
+<body onload="load()">
+	<div id="biaoti">
+		<img src="images/pinseng.png" alt="Logo" />
+		<p>XuGuang's Home Page</p>
+	</div>
+	<div id="zhongjian">
+       <div id="nav">
+		<ul id="boxstyle">
+			<li><a href="index.html"><button class="button" style="vertical-align:middle"><span>Homepage</span></button></a></li>
+			<li style="text-indent:1cm;">About Me</li>
+				<dl id="boxstyle2">
+					<dt><a href="resume.html"><button class="button" style="vertical-align:middle"><span>resume</span></button></a></dt>
+					<dt style="text-indent:1cm;">hobbies</dt>
+						<dd><ol class="boxstyle3">
+							<li><a href=""><button class="button" style="vertical-align:middle"><span>draw</span></button></a></li>
+							<li><a href=""><button class="button" style="vertical-align:middle"><span>play computer</span></button></a></li>
+							<li><a href=""><button class="button" style="vertical-align:middle"><span>manga</span></button></a></li>
+							<li><a href=""><button class="button" style="vertical-align:middle"><span>movies</span></button></a></li>
+						</ol></dd>
+					<dt style="text-indent:1cm;">skills</dt>
+						<dd><ol class="boxstyle3">
+							<li><a href="web_skill.html"><button class="button" style="vertical-align:middle"><span>web development</span></button></a></li>
+							<li><a href="C language.html"><button class="button" style="vertical-align:middle"><span>C language</span></button></a></li>
+							<li><a href="JAVA language.html"><button class="button" style="vertical-align:middle"><span>JAVA language</span></button></a></li>
+							<li><a href="game maker studio.html"><button class="button" style="vertical-align:middle"><span>game maker studio</span></button></a></li>
+						</ol></dd>
+				</dl>
+		</ul>
+	</div>
+        <div id="neirong">   
+            <div class="rongqi">
+                <div id="neirong">
+                    <form method="post" name="nameandmail" action="http://infotech.scu.edu.au/cgi-bin/echo_form" onSubmit="return CheckPost()">
+                    	First name: <div><input type="text" name="firstname"></div>
+						Last name: <div><input type="text" name="lastname"></div>
+                   		e-mail: <div><input type="email" name="email"></div>
+   						choose your age ranges:<br>
+                   		<input type="radio" name="ageranges" value="rang1">15-25<br>
+                   		<input type="radio" name="ageranges" value="rang2">26-35<br>
+                   		<input type="radio" name="ageranges" value="rang3">36-45<br>
+                   		<input type="radio" name="ageranges" value="rang4">46-55<br>
+                   		<input type="radio" name="ageranges" value="rang5">55+<br>
+						choose what kind of music do you like:<br>
+                   		<input type="checkbox" name="vehicle" value="Metal">Heavy Metal<br>
+                   		<input type="checkbox" name="vehicle" value="Country">Country and Western<br>
+                   		<input type="checkbox" name="vehicle" value="Classical">Classical<br>
+                   		<input type="checkbox" name="vehicle" value="Rock">Rock & Roll<br>
+                   		<input type="checkbox" name="vehicle" value="Pop">Pop<br>
+                   		<input type="checkbox" name="vehicle" value="Folk">Folk<br>
+                   		<input type="checkbox" name="vehicle" value="Blues">Blues<br>
+                   		<input type="checkbox" name="vehicle" value="Jazz">Jazz<br>
+                   		<input type="checkbox" name="vehicle" value="Disco">Disco<br>
+                   		<input type="checkbox" name="vehicle" value="Opera">Opera<br>
+						please tell me what kind of music you are searching for:<br>
+						<textarea rows="3" cols="60" name="texts"></textarea><br>
+                   		<input type="reset" value="reset">
+  						<input type="submit" value="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+	</div>
+	<div id="footer">
+		<p>Copyright @ 2018.Posted by: Xuguang Liang. Contact information:( 
+    			<a href="mailto:479161553@qq.com">479161553@qq.com</a>
+    			).mobilphone number:13978037351
+        </p>
+	</div>
+</body>
+</html>
